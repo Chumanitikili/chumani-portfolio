@@ -36,6 +36,50 @@ const Experience = () => {
         "Created automated fault-tracking systems, reducing resolution time by 25%.",
         "Produced technical documentation and delivered root cause analysis for major incidents."
       ]
+    },
+    {
+      company: "BMI Investments",
+      role: "NOC Technician (Tier 1)",
+      period: "Jan 2021 – Apr 2021",
+      location: "Cape Town, South Africa",
+      responsibilities: [
+        "Diagnosed connectivity issues across switching/routing networks.",
+        "Configured workstations for new deployments.",
+        "Supported server monitoring and infrastructure alerts."
+      ]
+    },
+    {
+      company: "Entsika Education & Training Authority",
+      role: "Program Coordinator",
+      period: "Jan 2020 – Dec 2020",
+      location: "Cape Town, South Africa",
+      responsibilities: [
+        "Oversaw field logistics, onboarding 20+ agents for literacy assessments.",
+        "Produced weekly dashboards for project leads using Excel and Google Sheets.",
+        "Managed project timelines and milestone tracking with education stakeholders."
+      ]
+    },
+    {
+      company: "Bathu Footwear",
+      role: "Retail Data Capturer (Part-Time)",
+      period: "Jan 2019 – Dec 2020",
+      location: "Cape Town, South Africa",
+      responsibilities: [
+        "Captured sales data across regional stores using inventory software.",
+        "Maintained SKU records and sales analytics for inventory optimization.",
+        "Collaborated with IT to troubleshoot POS integration issues."
+      ]
+    },
+    {
+      company: "TymeDigital (TymeBank)",
+      role: "Onboarding Specialist",
+      period: "Jan 2018 – Dec 2018",
+      location: "Cape Town, South Africa",
+      responsibilities: [
+        "Enrolled over 2,000 users onto Tyme's smart Kiosk banking platform.",
+        "Educated clients on app-based onboarding and biometric setup.",
+        "Provided Tier 1 support for mobile banking and security queries."
+      ]
     }
   ];
 

@@ -1,10 +1,26 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownCircle } from 'lucide-react';
 import CodeAnimation from './CodeAnimation';
 
 const Hero = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
+  const [roleIndex, setRoleIndex] = useState(0);
+  
+  const roles = [
+    "DevOps", 
+    "Automation Specialist", 
+    "Cloud Engineer", 
+    "SaaS"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex(prevIndex => (prevIndex + 1) % roles.length);
+    }, 3000); // Change role every 3 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -49,8 +65,8 @@ const Hero = () => {
               <span className="block">Hi, I'm</span>
               <span className="typewriter text-4xl md:text-6xl font-bold">Chumani Tikili</span>
             </h1>
-            <h2 className="text-xl md:text-2xl mb-3 text-gray-200 dark:text-matrix-green">
-              Automation Specialist | Cloud Engineer
+            <h2 className="text-xl md:text-2xl mb-3 text-gray-200 dark:text-matrix-green h-8">
+              <span className="typewriter">{roles[roleIndex]}</span>
             </h2>
             <p className="mb-8 text-lg text-gray-300 max-w-lg">
               Based in Cape Town, South Africa. Skilled in building and optimizing enterprise cloud solutions and automation workflows.
