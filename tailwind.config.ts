@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,8 +69,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				mono: ['Fira Code', 'monospace']
+				sans: ['Source Code Pro', 'Fira Code', 'monospace'],
+				mono: ['Source Code Pro', 'Fira Code', 'monospace'],
+				matrix: ['Source Code Pro', 'Fira Code', 'monospace']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

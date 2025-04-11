@@ -41,7 +41,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden" id="hero">
+    <section className="relative h-screen overflow-hidden font-matrix" id="hero">
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="animate-fade-in">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="block">Hi, I'm</span>
-              <span className="typewriter text-4xl md:text-6xl font-bold">Chumani Tikili</span>
+              <span className="typewriter text-4xl md:text-6xl font-bold">CHUMANI TIKILI</span>
             </h1>
             <h2 className="text-xl md:text-2xl mb-3 text-gray-200 dark:text-matrix-green h-8">
               <span className="typewriter">{roles[roleIndex]}</span>
