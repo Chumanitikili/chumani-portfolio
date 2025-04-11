@@ -26,10 +26,10 @@ const MatrixBackground: React.FC<MatrixBackgroundProps> = ({
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
     
-    // Set canvas to full screen
+    // Set canvas to full width but limited height for banner effect
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.height = 80; // Height of the navbar area
     };
     
     resizeCanvas();
@@ -69,7 +69,7 @@ const MatrixBackground: React.FC<MatrixBackgroundProps> = ({
         const charOpacity = Math.random() * 0.5 + 0.5;
         ctx.fillStyle = `rgba(0, 255, 0, ${charOpacity})`;
         
-        if (y > 0) { // Only draw if on screen
+        if (y > 0 && y < canvas.height) { // Only draw if on screen
           ctx.fillText(char, x, y);
         }
         
@@ -96,8 +96,8 @@ const MatrixBackground: React.FC<MatrixBackgroundProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 z-[-1] pointer-events-none"
-      style={{ opacity: 0.3 }}
+      className="fixed top-0 left-0 w-full z-[1] pointer-events-none"
+      style={{ opacity: 0.3, height: '80px' }}
     />
   );
 };
