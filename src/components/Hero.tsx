@@ -49,15 +49,15 @@ const Hero = () => {
               <span className="block">Hi, I'm</span>
               <span className="typewriter text-4xl md:text-6xl font-bold">Chumani Tikili</span>
             </h1>
-            <h2 className="text-xl md:text-2xl mb-6 text-gray-200">
-              Tech Professional | DevOps | Product Manager
+            <h2 className="text-xl md:text-2xl mb-3 text-gray-200 dark:text-matrix-green">
+              Automation Specialist | Cloud Engineer
             </h2>
             <p className="mb-8 text-lg text-gray-300 max-w-lg">
-              Based in Cape Town, South Africa. Passionate about building and optimizing digital products and cloud infrastructure.
+              Based in Cape Town, South Africa. Skilled in building and optimizing enterprise cloud solutions and automation workflows.
             </p>
             <a 
               href="#summary" 
-              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-capetown-blue font-medium transition-all hover:bg-opacity-90 hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-white text-capetown-blue dark:bg-matrix-green/90 dark:text-black font-medium transition-all hover:bg-opacity-90 hover:shadow-lg dark:hover:bg-matrix-green"
             >
               Explore My Work
               <ArrowDownCircle className="ml-2" size={20} />
@@ -73,7 +73,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <a href="#summary" className="text-white opacity-75 hover:opacity-100 transition-opacity">
+        <a href="#summary" className="text-white opacity-75 hover:opacity-100 transition-opacity dark:text-matrix-green">
           <ArrowDownCircle size={32} />
         </a>
       </div>

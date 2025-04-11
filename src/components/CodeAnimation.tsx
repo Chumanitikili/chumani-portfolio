@@ -1,8 +1,10 @@
 
 import React, { useEffect, useRef } from 'react';
+import { useTheme } from './ThemeProvider';
 
 const CodeAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { theme } = useTheme();
   
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -36,17 +38,20 @@ const CodeAnimation: React.FC = () => {
     // Code keywords to display occasionally
     const keywords = [
       'AWS', 'AZURE', 'CLOUD', 'DEVOPS', 'PYTHON', 'JAVASCRIPT',
-      'DOCKER', 'TERRAFORM', 'CI/CD', 'PRODUCT', 'FLASK', 'DJANGO'
+      'DOCKER', 'TERRAFORM', 'CI/CD', 'AUTOMATION', 'API', 'INFRASTRUCTURE'
     ];
     
     // Function to draw the matrix effect
     const draw = () => {
       // Partially clear the canvas to create fade effect
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillStyle = theme === 'dark' ? 'rgba(0, 0, 0, 0.05)' : 'rgba(0, 0, 0, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       // Set text properties
-      ctx.fillStyle = '#3B82F6'; // Primary blue color
+      const primaryColor = theme === 'dark' ? '#00FF00' : '#3B82F6';
+      const highlightColor = theme === 'dark' ? '#00FF80' : '#F97316';
+      const variantColor = theme === 'dark' ? '#90EE90' : '#93C5FD';
+      
       ctx.font = `${fontSize}px monospace`;
       
       // Draw each character
@@ -56,7 +61,7 @@ const CodeAnimation: React.FC = () => {
         
         if (shouldDisplayKeyword) {
           const keyword = keywords[Math.floor(Math.random() * keywords.length)];
-          ctx.fillStyle = '#F97316'; // Orange for keywords
+          ctx.fillStyle = highlightColor;
           ctx.fillText(keyword, i * fontSize, drops[i] * fontSize);
           
           // Move drop position down by keyword length
@@ -67,9 +72,9 @@ const CodeAnimation: React.FC = () => {
           
           // Randomize color a bit to create variety
           if (Math.random() > 0.98) {
-            ctx.fillStyle = '#93C5FD'; // Light blue
+            ctx.fillStyle = variantColor;
           } else {
-            ctx.fillStyle = '#3B82F6'; // Regular blue
+            ctx.fillStyle = primaryColor;
           }
           
           // Draw the character
@@ -94,14 +99,18 @@ const CodeAnimation: React.FC = () => {
       clearInterval(interval);
       window.removeEventListener('resize', setCanvasDimensions);
     };
-  }, []);
+  }, [theme]);
   
   return (
     <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
       <canvas 
         ref={canvasRef} 
-        className="w-full h-full bg-black rounded-lg"
-        style={{ boxShadow: '0 0 30px rgba(59, 130, 246, 0.5)' }}
+        className="w-full h-full bg-black rounded-lg matrix-shadow"
+        style={{ 
+          boxShadow: theme === 'dark' 
+            ? '0 0 30px rgba(0, 255, 0, 0.3)' 
+            : '0 0 30px rgba(59, 130, 246, 0.5)' 
+        }}
       />
     </div>
   );

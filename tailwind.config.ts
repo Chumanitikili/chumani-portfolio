@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -59,6 +58,13 @@ export default {
 					orange: '#F97316',
 					darkblue: '#1E40AF',
 					lightblue: '#93C5FD'
+				},
+				matrix: {
+					green: '#00FF00',
+					dark: '#001000',
+					light: '#00FF80',
+					black: '#000000',
+					glow: '#00FF00'
 				}
 			},
 			fontFamily: {
@@ -102,6 +108,11 @@ export default {
 				blink: {
 					'from, to': { borderColor: 'transparent' },
 					'50%': { borderColor: 'white' }
+				},
+				'matrix-fall': {
+					'0%': { transform: 'translateY(-100px)', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'translateY(1000px)', opacity: '0' }
 				}
 			},
 			animation: {
@@ -110,7 +121,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'typing': 'typing 3.5s steps(40, end), blink .75s step-end infinite'
+				'typing': 'typing 3.5s steps(40, end), blink .75s step-end infinite',
+				'matrix-fall': 'matrix-fall 8s linear infinite'
 			}
 		}
 	},
