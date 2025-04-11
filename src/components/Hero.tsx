@@ -58,16 +58,23 @@ const Hero = () => {
         <div className="absolute inset-0 hero-gradient" />
       </div>
       
-      <div className="relative z-10 container mx-auto h-full px-6 flex flex-col-reverse md:flex-row items-center justify-center">
+      <div className="relative z-10 container mx-auto h-full px-6 flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 text-center md:text-left text-white mt-8 md:mt-0">
-          <div className="animate-fade-in">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              <span className="block">Hi, I'm</span>
-              <span className="typewriter text-4xl md:text-6xl font-bold">CHUMANI TIKILI</span>
-            </h1>
-            <h2 className="text-xl md:text-2xl mb-3 text-gray-200 dark:text-matrix-green h-8">
-              <span className="typewriter">{roles[roleIndex]}</span>
-            </h2>
+          <div className="animate-fade-in flex flex-col items-center md:items-start">
+            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold">
+                <span>Hi, I'm</span>
+              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold">
+                <span className="typewriter">CHUMANI TIKILI</span>
+              </h1>
+            </div>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-lg md:text-xl text-gray-300 dark:text-gray-400">I'm a</span>
+              <h2 className="text-xl md:text-2xl text-gray-200 dark:text-matrix-green">
+                <span className="typewriter">{roles[roleIndex]}</span>
+              </h2>
+            </div>
             <p className="mb-8 text-lg text-gray-300 max-w-lg">
               Based in Cape Town, South Africa. Skilled in building and optimizing enterprise cloud solutions and automation workflows.
             </p>
@@ -81,7 +88,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="md:w-1/2 flex justify-center animate-scale-in">
+        <div className="md:w-1/2 flex justify-center animate-scale-in mt-8 md:mt-0">
           <div className="relative w-full max-w-md">
             <CodeAnimation />
           </div>
