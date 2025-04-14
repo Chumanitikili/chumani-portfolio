@@ -54,7 +54,7 @@ const Hero = () => {
           ref={backgroundRef}
           className="absolute inset-0 transition-transform duration-300 ease-out"
           style={{
-            backgroundImage: 'url(/images/table-mountain.jpg)', // Table Mountain backdrop
+            backgroundImage: 'url(https://images.unsplash.com/photo-1426604966848-d7adac402bff)', // Landmark mountain image
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.7)',
