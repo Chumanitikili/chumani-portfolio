@@ -1,26 +1,27 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownCircle } from 'lucide-react';
 import CodeAnimation from './CodeAnimation';
 
 const Hero = () => {
-  const backgroundRef = useRef<HTMLDivElement>(null);
+  const backgroundRef = useRef<HTMLDivElement | null>(null);
   const [roleIndex, setRoleIndex] = useState(0);
   
   const roles = [
     "DevOps", 
     "Automation Specialist", 
     "Cloud Engineer", 
-    "SaaS"
+    "CSM",
+    "SaaS Specialist",
+    "Web Developer",
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setRoleIndex(prevIndex => (prevIndex + 1) % roles.length);
+      setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
     }, 3000); // Change role every 3 seconds
     
     return () => clearInterval(interval);
-  }, []);
+  }, [roles.length]);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -35,9 +36,12 @@ const Hero = () => {
       
       backgroundRef.current.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
     };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+
+    // Throttle mousemove event to improve performance
+    const throttledMouseMove = _.throttle(handleMouseMove, 100);
+
+    window.addEventListener('mousemove', throttledMouseMove);
+    return () => window.removeEventListener('mousemove', throttledMouseMove);
   }, []);
 
   return (
@@ -48,12 +52,13 @@ const Hero = () => {
           ref={backgroundRef}
           className="absolute inset-0 transition-transform duration-300 ease-out"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1576485375217-d6a95e34d043?q=80&w=2070&auto=format&fit=crop)',
+            backgroundImage: 'url(/images/background.jpg)', // Use a local or CDN-hosted image
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.7)',
             transform: 'scale(1.1)',
           }}
+          aria-hidden="true"
         />
         <div className="absolute inset-0 hero-gradient" />
       </div>
@@ -62,15 +67,11 @@ const Hero = () => {
         <div className="md:w-1/2 text-center md:text-left text-white mt-8 md:mt-0">
           <div className="animate-fade-in flex flex-col items-center md:items-start">
             <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4">
-              <h1 className="text-3xl md:text-4xl font-bold">
-                <span>Hi, I'm</span>
-              </h1>
               <h1 className="text-4xl md:text-5xl font-bold">
-                <span className="typewriter">CHUMANI TIKILI</span>
+                <span className="name">CHUMANI TIKILI</span>        
               </h1>
             </div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-lg md:text-xl text-gray-300 dark:text-gray-400">I'm a</span>
               <h2 className="text-xl md:text-2xl text-gray-200 dark:text-matrix-green">
                 <span className="typewriter">{roles[roleIndex]}</span>
               </h2>
@@ -83,7 +84,7 @@ const Hero = () => {
               className="inline-flex items-center px-6 py-3 rounded-full bg-white text-capetown-blue dark:bg-matrix-green/90 dark:text-black font-medium transition-all hover:bg-opacity-90 hover:shadow-lg dark:hover:bg-matrix-green"
             >
               Explore My Work
-              <ArrowDownCircle className="ml-2" size={20} />
+              <ArrowDownCircle className="ml-2" size={20} aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -97,7 +98,7 @@ const Hero = () => {
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
         <a href="#summary" className="text-white opacity-75 hover:opacity-100 transition-opacity dark:text-matrix-green">
-          <ArrowDownCircle size={32} />
+          <ArrowDownCircle size={32} aria-hidden="true" />
         </a>
       </div>
     </section>
