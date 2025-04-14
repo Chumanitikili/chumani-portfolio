@@ -56,16 +56,16 @@ const Experience = () => {
       responsibilities: [
         "Oversaw field logistics, onboarding 20+ agents for literacy assessments.",
         "Produced weekly dashboards for project leads using Excel and Google Sheets.",
-        "Managed project timelines and milestone tracking with education stakeholders."
+        "Managed project timelines and milestone tracking with LMS stakeholders."
       ]
     },
     {
       company: "Bathu Footwear",
-      role: "Retail Data Capturer (Part-Time)",
+      role: "Retail Data Capturer ",
       period: "Jan 2019 – Dec 2020",
       location: "Cape Town, South Africa",
       responsibilities: [
-        "Captured sales data across regional stores using inventory software.",
+        "Captured sales data across in-store using inventory software.",
         "Maintained SKU records and sales analytics for inventory optimization.",
         "Collaborated with IT to troubleshoot POS integration issues."
       ]
