@@ -31,8 +31,8 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/chumani-tikili",
-      link: "https://linkedin.com/in/chumani-tikili",
+      value: "linkedin.com/in/chumani-d-tikili",
+      link: "https://linkedin.com/in/chumani-d-tikili",
     },
   ];
 
@@ -95,7 +95,7 @@ const Contact = () => {
                     <Github size={20} />
                   </a>
                   <a 
-                    href="https://linkedin.com/in/chumani-tikili"
+                    href="https://linkedin.com/in/chumani-d-tikili"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors"
