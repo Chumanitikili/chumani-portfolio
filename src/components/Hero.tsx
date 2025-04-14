@@ -54,7 +54,7 @@ const Hero = () => {
           ref={backgroundRef}
           className="absolute inset-0 transition-transform duration-300 ease-out"
           style={{
-            backgroundImage: 'url(/images/background.jpg)', // Use a local or CDN-hosted image
+            backgroundImage: 'url(/images/table-mountain.jpg)', // Table Mountain backdrop
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.7)',
