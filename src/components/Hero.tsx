@@ -1,6 +1,8 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownCircle } from 'lucide-react';
 import CodeAnimation from './CodeAnimation';
+import throttle from 'lodash/throttle';
 
 const Hero = () => {
   const backgroundRef = useRef<HTMLDivElement | null>(null);
@@ -38,7 +40,7 @@ const Hero = () => {
     };
 
     // Throttle mousemove event to improve performance
-    const throttledMouseMove = _.throttle(handleMouseMove, 100);
+    const throttledMouseMove = throttle(handleMouseMove, 100);
 
     window.addEventListener('mousemove', throttledMouseMove);
     return () => window.removeEventListener('mousemove', throttledMouseMove);
