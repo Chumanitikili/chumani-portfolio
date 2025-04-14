@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, Code } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
@@ -33,7 +32,7 @@ const Projects = () => {
       tools: ["JavaScript", "HTML5", "CSS3", "Web Audio API", "Local Storage"],
       repoUrl: "https://github.com/Chumanitikili/casino-slots-game",
       liveUrl: "https://casino-slots-game.onrender.com/",
-      image: "https://images.unsplash.com/photo-1596838132311-070eb7659d42?q=80&w=2070&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1535406208535-55f792a3dc9b?q=80&w=2070&auto=format&fit=crop"
     },
     {
       id: 3,
