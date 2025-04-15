@@ -13,6 +13,7 @@ const Hero = () => {
     "Automation Specialist", 
     "Cloud Engineer", 
     "CSM",
+    "Cyber Security",
     "SaaS Specialist",
     "Web Developer",
   ];
