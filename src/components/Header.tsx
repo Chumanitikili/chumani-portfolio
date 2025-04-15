@@ -29,7 +29,7 @@ const Header = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Chumanitikili', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/chumani-tikili', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/chumani-d-tikili', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:ctikili@gmail.com', label: 'Email' },
   ];
 
