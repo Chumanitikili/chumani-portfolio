@@ -49,6 +49,7 @@ const Projects = () => {
       description: "Collection of infrastructure-as-code templates for rapidly deploying scalable cloud resources on AWS and Azure.",
       tools: ["Terraform", "AWS", "Azure", "Python", "Bash"],
       repoUrl: "https://github.com/Chumanitikili/cloud-automation",
+      liveUrl: "https://cloud-automation.onrender.com",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
     },
     {
@@ -57,6 +58,7 @@ const Projects = () => {
       description: "Secure microservice API gateway with rate limiting, authentication, and request transformation capabilities.",
       tools: ["Node.js", "Express", "MongoDB", "JWT", "Docker"],
       repoUrl: "https://github.com/Chumanitikili/api-gateway",
+      liveUrl: "https://api-gateway-qfz2.onrender.com",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop"
     },
     {
@@ -65,6 +67,7 @@ const Projects = () => {
       description: "Modular CI/CD pipeline generator with templates for various deployment scenarios and cloud providers.",
       tools: ["Python", "GitHub Actions", "Jenkins", "Docker", "YAML"],
       repoUrl: "https://github.com/Chumanitikili/devops-pipeline-builder",
+      liveUrl: "https://devops-pipeline-builder.onrender.com",
       image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop"
     }
   ];
