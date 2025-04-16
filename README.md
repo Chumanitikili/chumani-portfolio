@@ -1,8 +1,7 @@
 
 # My Portfolio
 
-Hi there! Welcome to my portfolio repository. This is where I showcase my work, skills, and passion for building meaningful projects. You can check out the live version of my portfolio at [https://chumani-portfolio.onrender.com](chumani-portfolio.netlify.app).
-
+Hi there! Welcome to my portfolio repository. This is where I showcase my work, skills, and passion for building meaningful projects. You can check out the live version of my portfolio at https://chumani-portfolio.netlify.app/
 ## About Me
 
 I'm a developer who loves creating solutions that blend creativity and functionality. My portfolio reflects my journey, featuring projects that highlight my expertise in web development, problem-solving, and design. Whether it's crafting user-friendly interfaces or building robust backend systems, I enjoy tackling challenges and learning along the way.
