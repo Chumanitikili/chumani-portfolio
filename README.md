@@ -1,7 +1,7 @@
 
 # My Portfolio
 
-Hi there! Welcome to my portfolio repository. This is where I showcase my work, skills, and passion for building meaningful projects. You can check out the live version of my portfolio at [https://chumani-portfolio.onrender.com](https://chumani-portfolio.onrender.com).
+Hi there! Welcome to my portfolio repository. This is where I showcase my work, skills, and passion for building meaningful projects. You can check out the live version of my portfolio at [https://chumani-portfolio.onrender.com](chumani-portfolio.netlify.app).
 
 ## About Me
 
