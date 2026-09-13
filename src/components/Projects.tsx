@@ -18,6 +18,24 @@ const Projects = () => {
   const projectsData: Project[] = [
     {
       id: 1,
+      name: "Nightfall Cape",
+      description: "A collection of concept-driven web experiences focused on visual design, interaction and responsive digital experiences.",
+      tools: ["UI/UX", "Responsive Design", "Visual Design"],
+      repoUrl: "https://https://github.com/Chumanitikili/Nightfall-design-work,
+      liveUrl: "https://nightfall-design-work.ctikili.workers.dev/",
+      image: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=2069&auto=format&fit=crop"
+    },
+    {
+      id: 2,
+      name: "TappedIn",
+      description: "Marketing landing page for a service that delivers offers, vouchers, and coupons straight to WhatsApp scan a QR code in-store and start receiving relevant deals.",
+      tools: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+      repoUrl: "https://github.com/Chumanitikili/TappedIn-sa-live",
+      liveUrl: "https://crypto-price-glider.vercel.app/",
+      image: "https://images.unsplash.com/photo-1706759755832-47e53579cc0d?q=80&w=2069&auto=format&fit=crop"
+    },
+    {
+      id: 3,
       name: "Crypto Price Glider",
       description: "Real-time cryptocurrency tracking application with interactive charts, price alerts, and portfolio management features.",
       tools: ["Next.js", "TypeScript", "TailwindCSS", "API Integration", "Recharts"],
@@ -26,7 +44,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=2069&auto=format&fit=crop"
     },
     {
-      id: 2,
+      id: 4,
       name: "Casino Slots Game",
       description: "Interactive casino slot machine simulation with animations, sound effects, and realistic gameplay mechanics.",
       tools: ["JavaScript", "HTML5", "CSS3", "Web Audio API", "Local Storage"],
@@ -35,7 +53,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=300&h=200&auto=format&fit=crop"
     },
     {
-      id: 3,
+      id: 5,
       name: "Robben Island Experience",
       description: "Virtual tour application showcasing the historical Robben Island with interactive 3D elements and educational content.",
       tools: ["React", "Three.js", "GSAP", "Framer Motion", "Vercel"],
@@ -44,7 +62,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1601142634808-38923eb7c560?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      id: 4,
+      id: 6,
       name: "Cloud Infrastructure Automation",
       description: "Collection of infrastructure-as-code templates for rapidly deploying scalable cloud resources on AWS and Azure.",
       tools: ["Terraform", "AWS", "Azure", "Python", "Bash"],
@@ -53,7 +71,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
     },
     {
-      id: 5,
+      id: 7,
       name: "API Gateway Service",
       description: "Secure microservice API gateway with rate limiting, authentication, and request transformation capabilities.",
       tools: ["Node.js", "Express", "MongoDB", "JWT", "Docker"],
@@ -62,7 +80,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop"
     },
     {
-      id: 6,
+      id: 8,
       name: "DevOps Pipeline Builder",
       description: "Modular CI/CD pipeline generator with templates for various deployment scenarios and cloud providers.",
       tools: ["Python", "GitHub Actions", "Jenkins", "Docker", "YAML"],
