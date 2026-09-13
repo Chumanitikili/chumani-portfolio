@@ -21,7 +21,7 @@ const Projects = () => {
       name: "Nightfall Cape",
       description: "A collection of concept-driven web experiences focused on visual design, interaction and responsive digital experiences.",
       tools: ["UI/UX", "Responsive Design", "Visual Design"],
-      repoUrl: "https://https://github.com/Chumanitikili/Nightfall-design-work,
+      repoUrl: "https://github.com/Chumanitikili/Nightfall-design-work",
       liveUrl: "https://nightfall-design-work.ctikili.workers.dev/",
       image: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=2069&auto=format&fit=crop"
     },
