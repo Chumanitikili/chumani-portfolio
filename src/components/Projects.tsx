@@ -31,7 +31,7 @@ const Projects = () => {
       description: "Marketing landing page for a service that delivers offers, vouchers, and coupons straight to WhatsApp scan a QR code in-store and start receiving relevant deals.",
       tools: ["React", "TypeScript", "Vite", "Tailwind CSS"],
       repoUrl: "https://github.com/Chumanitikili/TappedIn-sa-live",
-      liveUrl: "https://crypto-price-glider.vercel.app/",
+      liveUrl: "https://tappedinsa.co.za/",
       image: "https://images.unsplash.com/photo-1706759755832-47e53579cc0d?q=80&w=2069&auto=format&fit=crop"
     },
     {
